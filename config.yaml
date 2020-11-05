@@ -1,0 +1,36 @@
+cameras:
+  tum:
+    width: 640.0
+    height: 480.0
+    fx: 525.0
+    fy: 525.0
+    cx: 319.5
+    cy: 239.5
+
+dataset:
+  kitti_0005:
+    resize_factor: 0.2
+    name: kitti
+    basedir: /run/media/az/420a7b37-c2b0-476d-b5a9-36622869cdb0/datasets/kitti
+    date: '2011_09_26'
+    drive: '0005'
+
+visual_odometry:
+  inlier_threshold: 1.5
+  scale_stop_threshold: 0.01
+  superpoint:
+    nms_radius: 4
+    keypoint_threshold: 0.005
+    max_keypoints: -1
+
+  superglue:
+    weights: outdoor
+    sinkhorn_iterations: 20
+    match_threshold: 0.2
+
+calibration:
+  imu_2_cam:
+
+
+
+
