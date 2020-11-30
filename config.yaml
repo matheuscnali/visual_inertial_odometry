@@ -11,7 +11,7 @@ dataset:
   kitti_0005:
     resize_factor: 0.2
     name: kitti
-    basedir: /run/media/az/420a7b37-c2b0-476d-b5a9-36622869cdb0/datasets/kitti
+    basedir: /run/media/az/HD/datasets/kitti
     date: '2011_09_26'
     drive: '0005'
 
@@ -31,6 +31,7 @@ visual_odometry:
 calibration:
   imu_2_cam:
 
-
+tracker:
+  population: 10
 
 
